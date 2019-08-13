@@ -2,6 +2,18 @@ from django.shortcuts import render, redirect
 from .models import userdb, noname
 from .forms import user_registry
 
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
+# sample API test endpoint....
+class HelloView(APIView):
+    def get(self, request):
+        content = {'message': 'Hello, World!'}
+        return Response(content)
+
+
+
+
 # returns a form page for uploading images and stores responses in the form to imgdb database
 # If a get request to the URL is made, a blank form is rendered
 def index(request):
