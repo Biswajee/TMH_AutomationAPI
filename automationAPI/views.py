@@ -3,6 +3,21 @@ from rest_framework import viewsets
 from .serializers import UserSerializer, GroupSerializer
 
 
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
+
+# sample model...
+class HelloView(APIView):
+    permission_classes = (IsAuthenticated,) 
+    
+    def get(self, request):
+        content = {'message': 'Hello, World!'}
+        return Response(content)
+
+
+
+
 class UserViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
