@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from .serializers import UserSerializer, GroupSerializer
+from .serializers import UserSerializer, GroupSerializer, ApiVersionV1_Serializer
 
 
 from rest_framework.views import APIView
@@ -10,7 +10,7 @@ from rest_framework.permissions import IsAuthenticated
 # sample model...
 class HelloView(APIView):
     permission_classes = (IsAuthenticated,) 
-    
+
     def get(self, request):
         content = {'message': 'Hello, World!'}
         return Response(content)
@@ -32,3 +32,8 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
+
+
+class ApiVersion_v1(viewsets.ModelViewSet):
+    queryset = Group.objects.all()
+    serializer_class = ApiVersionV1_Serializer
