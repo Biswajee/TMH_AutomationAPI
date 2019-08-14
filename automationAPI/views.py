@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from .serializers import UserSerializer, GroupSerializer, ApiVersionV1_Serializer
+from .models import appointments
 
 
 from rest_framework.views import APIView
@@ -35,5 +36,5 @@ class GroupViewSet(viewsets.ModelViewSet):
 
 
 class ApiVersion_v1(viewsets.ModelViewSet):
-    queryset = Group.objects.all()
+    queryset = appointments.objects.all()
     serializer_class = ApiVersionV1_Serializer

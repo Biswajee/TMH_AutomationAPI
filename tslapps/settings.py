@@ -42,9 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
+    'automationAPI',
     'rest_framework',
     'rest_framework.authtoken',
-    'automationAPI'
 ]
 
 MIDDLEWARE = [
