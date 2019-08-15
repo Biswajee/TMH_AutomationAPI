@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from .serializers import UserSerializer, GroupSerializer, ApiVersionV1_Serializer
+from .serializers import UserSerializer, GroupSerializer, ApiVersionV1_Appointments, ApiVersionV1_Emergency
 from .models import appointments
 
 
@@ -36,5 +36,12 @@ class GroupViewSet(viewsets.ModelViewSet):
 
 
 class ApiVersion_v1(viewsets.ModelViewSet):
+
     queryset = appointments.objects.all()
-    serializer_class = ApiVersionV1_Serializer
+    serializer_class = ApiVersionV1_Appointments
+
+    def get_appointments(self, request):
+        queryset = self.queryset.filter()
+        return queryset
+
+    # def emergency_bookings(self, request):
