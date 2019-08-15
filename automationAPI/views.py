@@ -44,4 +44,8 @@ class ApiVersion_v1(viewsets.ModelViewSet):
         queryset = self.queryset.filter()
         return queryset
 
-    # def emergency_bookings(self, request):
+    def emergency_bookings(self, request):
+        queryset = emergency.objects.all()
+        serializer_class = ApiVersionV1_Emergency
+        queryset = self.queryset.filter()
+        return queryset
