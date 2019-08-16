@@ -1,1 +1,1 @@
-web: gunicorn tslaps.wsgi
+web: gunicorn tslapps.wsgi
