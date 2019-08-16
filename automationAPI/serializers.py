@@ -21,4 +21,4 @@ class ApiVersionV1_Appointments(serializers.HyperlinkedModelSerializer):
 class ApiVersionV1_Emergency(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = emergency
-        fields = ['userid', 'etoken', 'name', 'department', 'date']
+        fields = ['userid', 'etoken', 'name', 'department', 'edate']

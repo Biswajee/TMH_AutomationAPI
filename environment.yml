@@ -1,0 +1,5 @@
+name: tslapps
+channels:
+  - defaults
+prefix: G:\Anaconda3\envs\tslapps
+
