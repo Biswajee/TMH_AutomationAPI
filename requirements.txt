@@ -11,7 +11,6 @@ Jinja2==2.10
 Markdown==3.1
 MarkupSafe==1.0
 oauthlib==2.1.0
-requirements==0.1
 urllib3==1.23
 virtualenv==15.2.0
 Werkzeug==0.14.1
