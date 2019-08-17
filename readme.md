@@ -85,6 +85,7 @@ Currently, two cloud build methods for application is employed:
 
 Here is the one step deploy to heroku button.
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/58bb125602924e1c9df28ead81b0e526)](https://app.codacy.com/app/Biswajee/TMH_AutomationAPI?utm_source=github.com&utm_medium=referral&utm_content=Biswajee/TMH_AutomationAPI&utm_campaign=Badge_Grade_Dashboard)
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 
