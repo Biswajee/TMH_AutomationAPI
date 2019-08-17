@@ -1,5 +1,5 @@
 ## Automation API for TATA Main Hospital, Jamshedpur
-
+![TATA MAIN HOSPITAL](misc/logo-tms.jpg)
 ### Introduction
 
 Tata Main Hospital (TMH), Jamshedpur serves millions of customers each year using both its offline and online services. The automation endpoint for TMH Vishwas serves the following purpose:
@@ -30,7 +30,7 @@ Given below are the list of available endpoints in the current API version v1
 + Avail general booking: https://tmhvishwas.herokuapp.com/api/v1/appointments/
 + Avail emergency booking: https://tmhvishwas.herokuapp.com/api/v1/emergency/
 
-Alternatively, a JSON response of API endpoints are available at endpoint: `/api`
+Alternatively, a `JSON` response of API endpoints are available at endpoint: `/api`
 
 ```JSON
 HTTP 200 OK
@@ -45,3 +45,46 @@ Vary: Accept
     "v1/emergency": "https://tmhvishwas.herokuapp.com/api/v1/emergency/"
 }
 ```
+The automation API accepts `POST` request only to update its database using the following endpoints
+
++ General bookings: https://tmhvishwas.herokuapp.com/api/v1/appointments/
++ Emergency bookings: https://tmhvishwas.herokuapp.com/api/v1/emergency/
+
+
+Response can be obtained using `GET` methods from the same endpoints. Here is a sample response:
+
+```JSON
+HTTP 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+{
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "userid": "5120",
+            "token": 1,
+            "name": "Park Chaeyoung",
+            "department": "Beautification",
+            "date": "2019-09-23"
+        }
+    ]
+}
+```
+
+### Building and running
+
+Currently, two cloud build methods for application is employed:
++ Heroku build
++ Docker
+
+#### Heroku
+
+Here is the one step deploy to heroku button.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+

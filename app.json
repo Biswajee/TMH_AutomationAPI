@@ -1,0 +1,7 @@
+{
+    "name": "TATA Main Hospital automation API service",
+    "description": "The automation API service for TMH Vishwas, TATA Main Hospital, Jamshedpur",
+    "repository": "https://github.com/Biswajee/TMH_AutomationAPI",
+    "logo": "misc/logo-tms.jpg",
+    "keywords": ["Django", "Python", "API"]
+}
