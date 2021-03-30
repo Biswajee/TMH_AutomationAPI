@@ -1,7 +1,6 @@
 ## Automation API for TATA Main Hospital, Jamshedpur
 ![TATA MAIN HOSPITAL](misc/logo-tms.jpg)
 
-![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783289622-71476ce2d00325edee2d7495)
 ![Uptime Robot ratio (7 days)](https://img.shields.io/uptimerobot/ratio/7/m783289622-71476ce2d00325edee2d7495)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f942be51da89cf14b080/maintainability)](https://codeclimate.com/github/Biswajee/TMH_AutomationAPI/maintainability)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/58bb125602924e1c9df28ead81b0e526)](https://app.codacy.com/app/Biswajee/TMH_AutomationAPI?utm_source=github.com&utm_medium=referral&utm_content=Biswajee/TMH_AutomationAPI&utm_campaign=Badge_Grade_Dashboard)
